@@ -1,0 +1,21 @@
+.background-text {
+    font-family: monospace;
+    width: 100vw;
+    z-index: -1;
+    height: 100vh;
+    position: fixed;
+    font-size: 5em;
+    background-color:rgb(30,30,30);
+    color:rgb(28,13,1);
+    text-align:center;
+}
+
+.maxCharLength {
+    max-width: 12ch;
+    margin: 0 auto;
+    padding-top: 2rem;
+}
+
+.markedWord {
+    color: rgb(0, 110, 178);
+}
