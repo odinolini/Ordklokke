@@ -4,7 +4,7 @@
     z-index: -1;
     height: 100vh;
     position: fixed;
-    font-size: 5em;
+    font-size: 6vw;
     background-color:rgb(30,30,30);
     color:rgb(28,13,1);
     text-align:center;
@@ -19,3 +19,9 @@
 .markedWord {
     color: rgb(0, 110, 178);
 }
+
+@media screen and (max-width: 600px) {
+    .background-text {
+      font-size: 10vw;
+    }
+  }
