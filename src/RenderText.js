@@ -6,14 +6,10 @@ export default class RenderText extends Component {
         return string.slice(0, pos) + insert + string.slice(pos);
     }
 
-    createMarkup(string) {
-        return { __html: string };
-    }
-
     render() {
         let text = this.props.text;
-
         let timeArr = this.props.timeString.split(" ");
+
         let lastindex = 0;
 
         for (let i = 0; i < timeArr.length; i++) {
@@ -35,7 +31,7 @@ export default class RenderText extends Component {
                 <div className="background-text">
                     <p
                         className="maxCharLength"
-                        dangerouslySetInnerHTML={this.createMarkup(text)}
+                        dangerouslySetInnerHTML={{__html: text}}
                     />
                 </div>
             </div>
