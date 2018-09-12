@@ -82,9 +82,11 @@ export default class OrdKlokke extends Component {
             h += 1;
         }
 
-        if (h > 12) {
+        if (h >= 12) {
             h -= 12;
         }
+
+  
 
         let hourWords = [
             "TOLV",
